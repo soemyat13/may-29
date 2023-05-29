@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="gob.css">
+    </head>
+    <body>
+      
+        <nav class="grp">
+            <a class="menubar1" href="factorial.html">Factorial</a>
+            <a class="menubar2" href="number.html">Number </a>
+          </nav>
+      
+    <h2 class="title">Number</h2>
+    <div class="first"> 
+        <div class="start">
+            <label for="startName">Start Number</label>
+            <input type="text" id="startNumber" class="startchid">
+        </div>
+        <div class="hello">
+            <lable for="End Number">End Number</lable><br>
+            <input type="text" id="endNumber" class="hellochid">
+        </div>
+        
+        <div class="word">
+            <button class="wordchid" >Submit</button>
+        </div>
+        <div class="even">
+            <button class="evenchid">Even</button>
+        </div>
+        
+        <div class="result">
+            <lable for="result">Result:</lable>
+            <input type="text" id="Result:" class="resultchid">
+        </div>
+                
+    </div>
+    <script>
+       function forloop(){
+        let startNum=Number(document.getElementById("startNumber").value);
+        let endtNum=Number(document.getElementById("endNumber").value);
+        console.log ('${startNum} and ${endNum}');
+       };
+       if (startNum < endNum){
+        for (let num=startNum; num <= endNum; num++) {
+        document.getElementById("result").innerHTML+= '$(num)\n';
+       }
+    }else{
+        for (let num = startNum; num >= endNum; num--) {
+        document.getElementById("result").innerHTML+= '$(num)\n';
+       }
+     }
+    
+    </script>
+    </body>
+</html>
